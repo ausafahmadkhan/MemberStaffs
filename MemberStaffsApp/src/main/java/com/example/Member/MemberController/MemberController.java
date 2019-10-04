@@ -12,6 +12,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.concurrent.CompletableFuture;
 
 @RestController
@@ -33,7 +34,7 @@ public class MemberController
     }
 
     @RequestMapping(path = "/enrollStudent/{studentId}/{topicId}", method = RequestMethod.GET, produces = {"application/json"})
-    public CompletableFuture<ResponseEntity<ResponseModel<StudentResponse>>> enrollStudent(@PathVariable("topicId") String topicId, @PathVariable("studentId") String studentId)
+    public CompletableFuture<ResponseEntity<ResponseModel<StudentResponse>>> enrollStudent(@PathVariable("topicId") String topicId, @PathVariable("studentId") String studentId) throws Exception
     {
         CompletableFuture<StudentResponse> studentResponse = studentService.enrollStudent(studentId, topicId);
         CompletableFuture<ResponseEntity<ResponseModel<StudentResponse>>> result = studentResponse.thenApply(t -> new ResponseEntity<>(new ResponseModel(t), HttpStatus.OK));
@@ -41,8 +42,7 @@ public class MemberController
     }
 
     @RequestMapping(path = "/getStudent/{studentId}", method = RequestMethod.GET, produces = {"application/json"})
-    public CompletableFuture<ResponseEntity<ResponseModel<StudentResponse>>> getStudent(@PathVariable("studentId") String studentId)
-    {
+    public CompletableFuture<ResponseEntity<ResponseModel<StudentResponse>>> getStudent(@PathVariable("studentId") String studentId) throws IllegalAccessException {
         CompletableFuture<StudentResponse> studentResponse = studentService.getStudent(studentId);
         CompletableFuture<ResponseEntity<ResponseModel<StudentResponse>>> result = studentResponse.thenApply(t -> new ResponseEntity<>(new ResponseModel<>(t), HttpStatus.OK));
         return result;

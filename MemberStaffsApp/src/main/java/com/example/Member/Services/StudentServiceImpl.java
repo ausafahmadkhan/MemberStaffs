@@ -1,6 +1,7 @@
 package com.example.Member.Services;
 
 import com.example.Material.MaterialResponses.TopicResponse;
+import com.example.Member.Client.StudyMaterialClient;
 import com.example.Member.MemberRequest.StudentRequest;
 import com.example.Member.MemberResponse.ResponseModel;
 import com.example.Member.MemberResponse.StudentResponse;
@@ -9,25 +10,27 @@ import com.example.Member.Persistence.Models.StudentDAO;
 import com.example.Member.Persistence.Models.TeacherDAO;
 import com.example.Member.Persistence.Repository.StudentRepository;
 import com.example.Member.Persistence.Repository.TeacherRepository;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
-import org.springframework.web.util.UriComponentsBuilder;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
-
+import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
 @Service
 public class StudentServiceImpl implements StudentService
 {
+    private static Logger logger = LogManager.getLogger(StudentServiceImpl.class);
+
     @Autowired
     private StudentRepository studentRepository;
 
@@ -35,7 +38,7 @@ public class StudentServiceImpl implements StudentService
     private TeacherRepository teacherRepository;
 
     @Autowired
-    private RestTemplate restTemplate;
+    private StudyMaterialClient studyMaterialClient;
 
     @Override
     @Async
@@ -48,34 +51,69 @@ public class StudentServiceImpl implements StudentService
         studentResponse.setName(studentRequest.getName());
         studentResponse.setStudentId(studentRequest.getStudentId());
         studentRepository.save(studentDAO);
+        logger.info("Added student : {}", studentDAO);
         return CompletableFuture.completedFuture(studentResponse);
     }
 
     @Override
     @Async
-    public CompletableFuture<StudentResponse> enrollStudent(String studentId, String topicId)
+    public CompletableFuture<StudentResponse> enrollStudent(String studentId, String topicId) throws Exception
     {
-        String url = "http://localhost:8080/StudyMaterials/getTopic/"+topicId;
-        ResponseModel<TopicResponse>  topicResponseModel = restTemplate.exchange(url, HttpMethod.GET, null, new ParameterizedTypeReference<ResponseModel<TopicResponse>>() {}).getBody();
-        TopicResponse topicResponse = topicResponseModel.getData();
-        System.out.println(topicResponse);
         StudentDAO studentDAO = studentRepository.findById(studentId).orElse(null);
         if (studentDAO.getTopicsEnrolled() == null) {
             List<TopicResponse> topics = new ArrayList<>();
             studentDAO.setTopicsEnrolled(topics);
         }
-        studentDAO.getTopicsEnrolled().add(topicResponse);
-        StudentResponse studentResponse = new StudentResponse();
-        studentResponse.setStudentId(studentDAO.getStudentId());
-        studentResponse.setName(studentDAO.getName());
-        studentResponse.setTopicsEnrolled(studentDAO.getTopicsEnrolled());
         TeacherDAO teacherDAO = teacherRepository.searchByTopicId(topicId);
+        logger.info("TeacherDAO : {}", teacherDAO);
         if (studentDAO.getTeachersAssigned() == null) {
             List<TeacherDAO> teachers = new ArrayList<>();
             studentDAO.setTeachersAssigned(teachers);
         }
         studentDAO.getTeachersAssigned().add(teacherDAO);
-        studentRepository.save(studentDAO);
+
+        Call<ResponseModel<TopicResponse>> topicResponseModelCall = studyMaterialClient.getTopic(topicId);
+        topicResponseModelCall.enqueue(
+                new Callback<ResponseModel<TopicResponse>>() {
+                    @Override
+                    public void onResponse(Call<ResponseModel<TopicResponse>> call, Response<ResponseModel<TopicResponse>> response) {
+                        try
+                        {
+                            ResponseModel<TopicResponse> responseModel =  response.body();
+                            logger.info("Response Model: {}", responseModel);
+                            TopicResponse topicResponse = responseModel.getData();
+                            List<TopicResponse> topicsEnrolled = studentDAO.getTopicsEnrolled();
+
+                            if (topicsEnrolled == null || topicsEnrolled.isEmpty())
+                            {
+                                studentDAO.setTopicsEnrolled(new ArrayList<TopicResponse>());
+                            }
+
+                            studentDAO.getTopicsEnrolled().add(topicResponse);
+                            logger.info("Student DAO : {}", studentDAO);
+                            studentRepository.save(studentDAO);
+                        }
+                        catch(Exception e)
+                        {
+                            int x = 5;
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<ResponseModel<TopicResponse>> call, Throwable throwable) {
+
+                    }
+                }
+        );
+
+        logger.info("StudentDAO : {}", studentDAO);
+
+        StudentResponse studentResponse = new StudentResponse();
+        studentResponse.setStudentId(studentDAO.getStudentId());
+        studentResponse.setName(studentDAO.getName());
+        studentResponse.setTopicsEnrolled(studentDAO.getTopicsEnrolled());
+        logger.info("Enrolled Student : {}", studentDAO);
         List<TeacherDAO> teachers = studentDAO.getTeachersAssigned();
         List<TeacherResponse> teacherResponses = new ArrayList<>();
         for (TeacherDAO t : teachers)
@@ -92,12 +130,15 @@ public class StudentServiceImpl implements StudentService
 
     @Override
     @Async
-    public CompletableFuture<StudentResponse> getStudent(String studentId)
-    {
+    public CompletableFuture<StudentResponse> getStudent(String studentId) throws IllegalAccessException {
         StudentResponse studentResponse = new StudentResponse();
         StudentDAO studentDAO = studentRepository.findById(studentId).orElse(null);
         studentResponse.setStudentId(studentDAO.getStudentId());
         studentResponse.setName(studentDAO.getName());
+        if (studentDAO.getTopicsEnrolled() == null) {
+            logger.error("Student not enrolled to any course");
+            throw new IllegalAccessException("NOT ENROLLED IN ANY COURSE");
+        }
         studentResponse.setTopicsEnrolled(studentDAO.getTopicsEnrolled());
         List<TeacherDAO> teacherDAOS = studentDAO.getTeachersAssigned();
         List<TeacherResponse> teacherResponses = new ArrayList<>();
@@ -111,6 +152,7 @@ public class StudentServiceImpl implements StudentService
         }
 
         studentResponse.setTeachersAssigned(teacherResponses);
+        logger.info("Student info : {}", studentResponse);
 
         return CompletableFuture.completedFuture(studentResponse);
     }

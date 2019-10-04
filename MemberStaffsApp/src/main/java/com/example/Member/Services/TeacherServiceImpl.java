@@ -4,6 +4,8 @@ import com.example.Member.MemberRequest.TeacherRequest;
 import com.example.Member.MemberResponse.TeacherResponse;
 import com.example.Member.Persistence.Models.TeacherDAO;
 import com.example.Member.Persistence.Repository.TeacherRepository;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
@@ -14,10 +16,9 @@ import java.util.concurrent.CompletableFuture;
 public class TeacherServiceImpl implements TeacherService
 {
     @Autowired
-    private RestTemplate restTemplate;
-
-    @Autowired
     private TeacherRepository teacherRepository;
+
+    private static Logger logger = LogManager.getLogger(TeacherServiceImpl.class);
 
     @Override
     @Async
@@ -28,11 +29,11 @@ public class TeacherServiceImpl implements TeacherService
         teacherDAO.setTeacherId(teacherRequest.getTeacherId());
         teacherDAO.setTopicId(teacherRequest.getTopicId());
         teacherRepository.save(teacherDAO);
+        logger.info("Added Teacher : {}", teacherDAO);
         TeacherResponse teacherResponse = new TeacherResponse();
         teacherResponse.setTeacherId(teacherDAO.getTeacherId());
         teacherResponse.setName(teacherDAO.getName());
         teacherResponse.setTopicId(teacherDAO.getTopicId());
-
         return CompletableFuture.completedFuture(teacherResponse);
 
     }
@@ -46,7 +47,7 @@ public class TeacherServiceImpl implements TeacherService
         teacherResponse.setTeacherId(teacherDAO.getTeacherId());
         teacherResponse.setName(teacherDAO.getName());
         teacherResponse.setTopicId(teacherDAO.getTopicId());
-
+        logger.info("Fetched teacher : {}", teacherDAO);
         return CompletableFuture.completedFuture(teacherResponse);
     }
 }

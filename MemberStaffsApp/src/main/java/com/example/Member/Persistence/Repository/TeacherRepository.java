@@ -7,6 +7,6 @@ import org.springframework.data.mongodb.repository.Query;
 
 public interface TeacherRepository extends MongoRepository<TeacherDAO, String>
 {
-    @Query("{'topicId' : ?0}" )
+    @Query(value = "{'topicId' : ?0}", fields = "{'topicId' : 0}")
     public TeacherDAO searchByTopicId(String topicId);
 }
