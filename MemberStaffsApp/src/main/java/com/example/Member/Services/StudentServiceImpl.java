@@ -95,7 +95,7 @@ public class StudentServiceImpl implements StudentService
                         }
                         catch(Exception e)
                         {
-                            int x = 5;
+                            logger.error("Exception occured : {}", e);
                         }
 
                     }
