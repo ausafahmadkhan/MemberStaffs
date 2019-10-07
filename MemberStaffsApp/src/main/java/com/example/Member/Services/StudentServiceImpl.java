@@ -136,7 +136,7 @@ public class StudentServiceImpl implements StudentService
         studentResponse.setStudentId(studentDAO.getStudentId());
         studentResponse.setName(studentDAO.getName());
         if (studentDAO.getTopicsEnrolled() == null) {
-            logger.error("Student not enrolled to any course");
+            logger.error("Student not enrolled in any course");
             throw new IllegalAccessException("NOT ENROLLED IN ANY COURSE");
         }
         studentResponse.setTopicsEnrolled(studentDAO.getTopicsEnrolled());
