@@ -88,3 +88,187 @@
 [INFO ] 2019-10-05 02:16:06.104 [OkHttp http://localhost:8080/...] StudentServiceImpl - Student DAO : StudentDAO(studentId=2, name=New Student, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherDAO(teacherId=1, name=Khan, topicId=1), TeacherDAO(teacherId=2, name=New Teacher, topicId=null)])
 [INFO ] 2019-10-05 02:16:30.867 [task-4] StudentServiceImpl - Student info : StudentResponse(studentId=2, name=New Student, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1), TeacherResponse(teacherId=2, name=New Teacher, topicId=2)])
 [INFO ] 2019-10-05 02:33:04.491 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 01:13:28.707 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 01:14:46.197 [task-1] StudentServiceImpl - Student info : StudentResponse(studentId=1, name=Ausaf, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1)])
+[INFO ] 2019-10-08 01:15:44.799 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 01:15:58.886 [task-1] StudentServiceImpl - Student info : StudentResponse(studentId=1, name=Ausaf, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1)])
+[INFO ] 2019-10-08 01:16:00.917 [task-2] StudentServiceImpl - Student info : StudentResponse(studentId=1, name=Ausaf, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1)])
+[INFO ] 2019-10-08 01:16:01.985 [task-3] StudentServiceImpl - Student info : StudentResponse(studentId=1, name=Ausaf, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1)])
+[INFO ] 2019-10-08 01:21:35.368 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 01:21:36.390 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1541 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 01:21:36.391 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 01:21:36.393 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 01:21:42.468 [main] MemberStaffsApp - Started MemberStaffsApp in 6.98 seconds (JVM running for 8.949)
+[INFO ] 2019-10-08 01:25:23.069 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 01:25:24.090 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1554 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 01:25:24.091 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 01:25:24.092 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 01:25:30.370 [main] MemberStaffsApp - Started MemberStaffsApp in 7.139 seconds (JVM running for 8.971)
+[INFO ] 2019-10-08 01:28:14.239 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 01:28:15.160 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1568 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 01:28:15.160 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 01:28:15.167 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 01:28:21.468 [main] MemberStaffsApp - Started MemberStaffsApp in 7.106 seconds (JVM running for 8.911)
+[INFO ] 2019-10-08 01:30:12.348 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 01:30:13.515 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1575 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 01:30:13.517 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 01:30:13.518 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 01:30:19.662 [main] MemberStaffsApp - Started MemberStaffsApp in 7.201 seconds (JVM running for 9.048)
+[INFO ] 2019-10-08 01:38:13.371 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 01:38:14.374 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1590 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 01:38:14.376 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 01:38:14.377 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 01:38:20.761 [main] MemberStaffsApp - Started MemberStaffsApp in 7.285 seconds (JVM running for 9.209)
+[INFO ] 2019-10-08 01:40:26.509 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 01:40:27.570 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1598 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 01:40:27.571 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 01:40:27.573 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 01:40:34.169 [main] MemberStaffsApp - Started MemberStaffsApp in 7.493 seconds (JVM running for 9.466)
+[INFO ] 2019-10-08 01:45:31.511 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 01:45:32.661 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1609 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 01:45:32.664 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 01:45:32.665 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 01:45:40.975 [main] MemberStaffsApp - Started MemberStaffsApp in 9.198 seconds (JVM running for 11.391)
+[INFO ] 2019-10-08 01:46:38.707 [http-nio-8081-exec-4] MyUserDetailService - userName : Ausaf
+[INFO ] 2019-10-08 01:46:39.166 [http-nio-8081-exec-4] MyUserDetailService - User Fetched from db : null
+[INFO ] 2019-10-08 01:50:01.572 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 01:50:02.584 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1627 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 01:50:02.585 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 01:50:02.609 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 01:50:08.922 [main] MemberStaffsApp - Started MemberStaffsApp in 7.23 seconds (JVM running for 9.059)
+[INFO ] 2019-10-08 01:50:24.975 [http-nio-8081-exec-3] MyUserDetailService - userName : Khan
+[INFO ] 2019-10-08 01:50:25.398 [http-nio-8081-exec-3] MyUserDetailService - User Fetched from db : UserDAO(id=1, userName=Khan, password=, isActive=true, role=ADMIN)
+[INFO ] 2019-10-08 01:52:33.350 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 01:52:34.361 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1650 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 01:52:34.365 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 01:52:34.366 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 01:52:40.452 [main] MemberStaffsApp - Started MemberStaffsApp in 6.976 seconds (JVM running for 8.835)
+[INFO ] 2019-10-08 01:52:47.835 [http-nio-8081-exec-1] MyUserDetailService - userName : Khan
+[INFO ] 2019-10-08 01:52:48.397 [http-nio-8081-exec-1] MyUserDetailService - User Fetched from db : UserDAO(id=1, userName=Khan, password=password, isActive=true, role=ADMIN)
+[INFO ] 2019-10-08 01:54:17.157 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 01:54:18.252 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1659 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 01:54:18.253 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 01:54:18.254 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 01:54:24.413 [main] MemberStaffsApp - Started MemberStaffsApp in 7.113 seconds (JVM running for 9.065)
+[INFO ] 2019-10-08 01:54:39.680 [http-nio-8081-exec-3] MyUserDetailService - userName : Khan
+[INFO ] 2019-10-08 01:54:40.050 [http-nio-8081-exec-3] MyUserDetailService - User Fetched from db : UserDAO(id=1, userName=Khan, password=password, isActive=true, role=ADMIN)
+[INFO ] 2019-10-08 01:57:16.642 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 01:57:17.626 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1669 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 01:57:17.646 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 01:57:17.648 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 01:57:23.781 [main] MemberStaffsApp - Started MemberStaffsApp in 7.032 seconds (JVM running for 8.976)
+[INFO ] 2019-10-08 01:57:33.536 [http-nio-8081-exec-3] MyUserDetailService - userName : Khan
+[INFO ] 2019-10-08 01:57:33.849 [http-nio-8081-exec-3] MyUserDetailService - User Fetched from db : UserDAO(id=1, userName=Khan, password=password, isActive=true, role=ADMIN)
+[INFO ] 2019-10-08 01:57:59.104 [http-nio-8081-exec-1] MyUserDetailService - userName : Khan
+[INFO ] 2019-10-08 01:57:59.109 [http-nio-8081-exec-1] MyUserDetailService - User Fetched from db : UserDAO(id=1, userName=Khan, password=password, isActive=true, role=ADMIN)
+[INFO ] 2019-10-08 02:01:23.103 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 02:01:24.069 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1687 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 02:01:24.070 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 02:01:24.071 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 02:01:30.259 [main] MemberStaffsApp - Started MemberStaffsApp in 7.039 seconds (JVM running for 8.992)
+[INFO ] 2019-10-08 02:01:44.998 [http-nio-8081-exec-4] MyUserDetailService - userName : Khan
+[INFO ] 2019-10-08 02:01:45.329 [http-nio-8081-exec-4] MyUserDetailService - User Fetched from db : UserDAO(id=1, userName=Khan, password=password, isActive=true, role=ADMIN)
+[INFO ] 2019-10-08 02:03:32.323 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 02:03:33.470 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1695 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 02:03:33.471 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 02:03:33.473 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 02:03:39.494 [main] MemberStaffsApp - Started MemberStaffsApp in 6.994 seconds (JVM running for 8.975)
+[INFO ] 2019-10-08 02:03:45.497 [task-1] StudentServiceImpl - Student info : StudentResponse(studentId=1, name=Ausaf, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1)])
+[INFO ] 2019-10-08 02:04:02.659 [http-nio-8081-exec-8] MyUserDetailService - userName : Khan
+[INFO ] 2019-10-08 02:04:02.706 [http-nio-8081-exec-8] MyUserDetailService - User Fetched from db : UserDAO(id=1, userName=Khan, password=password, isActive=true, role=ADMIN)
+[INFO ] 2019-10-08 02:04:36.846 [task-2] StudentServiceImpl - Student info : StudentResponse(studentId=1, name=Ausaf, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1)])
+[INFO ] 2019-10-08 02:05:34.200 [task-3] StudentServiceImpl - Student info : StudentResponse(studentId=1, name=Ausaf, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1)])
+[INFO ] 2019-10-08 02:06:33.484 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 02:06:34.645 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1713 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 02:06:34.655 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 02:06:34.660 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 02:06:42.064 [main] MemberStaffsApp - Started MemberStaffsApp in 8.393 seconds (JVM running for 10.44)
+[INFO ] 2019-10-08 02:06:56.383 [task-1] StudentServiceImpl - Student info : StudentResponse(studentId=1, name=Ausaf, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1)])
+[INFO ] 2019-10-08 02:07:38.739 [http-nio-8081-exec-7] MyUserDetailService - userName : Ausaf
+[INFO ] 2019-10-08 02:07:38.791 [http-nio-8081-exec-7] MyUserDetailService - User Fetched from db : UserDAO(id=5d9b94bb74d1eafb435ca12f, userName=Ausaf, password=password, isActive=true, role=ADMIN)
+[INFO ] 2019-10-08 02:08:39.478 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 02:08:40.573 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1735 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 02:08:40.575 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 02:08:40.576 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 02:08:47.986 [main] MemberStaffsApp - Started MemberStaffsApp in 8.276 seconds (JVM running for 10.446)
+[INFO ] 2019-10-08 02:09:14.090 [http-nio-8081-exec-4] MyUserDetailService - userName : Ausaf
+[INFO ] 2019-10-08 02:09:14.411 [http-nio-8081-exec-4] MyUserDetailService - User Fetched from db : UserDAO(id=5d9b94bb74d1eafb435ca12f, userName=Ausaf, password=password, isActive=true, role=ADMIN)
+[INFO ] 2019-10-08 02:09:57.586 [task-1] StudentServiceImpl - Student info : StudentResponse(studentId=1, name=Ausaf, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1)])
+[INFO ] 2019-10-08 02:10:04.676 [task-2] StudentServiceImpl - Student info : StudentResponse(studentId=2, name=New Student, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1), TeacherResponse(teacherId=2, name=New Teacher, topicId=2)])
+[INFO ] 2019-10-08 02:10:11.836 [task-4] StudentServiceImpl - Student info : StudentResponse(studentId=2, name=New Student, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1), TeacherResponse(teacherId=2, name=New Teacher, topicId=2)])
+[INFO ] 2019-10-08 02:12:49.419 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 02:12:50.309 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1760 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 02:12:50.310 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 02:12:50.311 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 02:12:56.376 [main] MemberStaffsApp - Started MemberStaffsApp in 6.828 seconds (JVM running for 8.672)
+[INFO ] 2019-10-08 02:13:19.015 [http-nio-8081-exec-6] MyUserDetailService - userName : Khan
+[INFO ] 2019-10-08 02:13:19.367 [http-nio-8081-exec-6] MyUserDetailService - User Fetched from db : UserDAO(id=1, userName=Khan, password=password, isActive=true, role=ADMIN)
+[INFO ] 2019-10-08 02:14:39.604 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 02:14:40.737 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1767 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 02:14:40.737 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 02:14:40.739 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 02:14:47.357 [main] MemberStaffsApp - Started MemberStaffsApp in 7.567 seconds (JVM running for 9.769)
+[INFO ] 2019-10-08 02:15:02.517 [http-nio-8081-exec-4] MyUserDetailService - userName : Khan
+[INFO ] 2019-10-08 02:15:02.890 [http-nio-8081-exec-4] MyUserDetailService - User Fetched from db : UserDAO(id=1, userName=Khan, password=password, isActive=true, role=ADMIN)
+[INFO ] 2019-10-08 02:16:32.288 [http-nio-8081-exec-4] MyUserDetailService - userName : Ausaf
+[INFO ] 2019-10-08 02:16:32.293 [http-nio-8081-exec-4] MyUserDetailService - User Fetched from db : UserDAO(id=5d9b94bb74d1eafb435ca12f, userName=Ausaf, password=password, isActive=true, role=ADMIN)
+[INFO ] 2019-10-08 02:16:54.871 [http-nio-8081-exec-2] MyUserDetailService - userName : Ausaf
+[INFO ] 2019-10-08 02:16:54.875 [http-nio-8081-exec-2] MyUserDetailService - User Fetched from db : UserDAO(id=5d9b94bb74d1eafb435ca12f, userName=Ausaf, password=password, isActive=true, role=ADMIN)
+[INFO ] 2019-10-08 02:19:02.600 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 02:19:03.604 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1781 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 02:19:03.604 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 02:19:03.606 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 02:19:09.700 [main] MemberStaffsApp - Started MemberStaffsApp in 6.968 seconds (JVM running for 9.016)
+[INFO ] 2019-10-08 02:19:15.067 [task-1] StudentServiceImpl - Student info : StudentResponse(studentId=1, name=Ausaf, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1)])
+[INFO ] 2019-10-08 02:19:42.859 [http-nio-8081-exec-8] MyUserDetailService - userName : Khan
+[INFO ] 2019-10-08 02:19:42.906 [http-nio-8081-exec-8] MyUserDetailService - User Fetched from db : UserDAO(id=1, userName=Khan, password=password, isActive=true, role=ADMIN)
+[INFO ] 2019-10-08 02:19:53.256 [task-2] StudentServiceImpl - Student info : StudentResponse(studentId=1, name=Ausaf, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1)])
+[INFO ] 2019-10-08 02:19:58.826 [task-3] StudentServiceImpl - Student info : StudentResponse(studentId=2, name=New Student, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1), TeacherResponse(teacherId=2, name=New Teacher, topicId=2)])
+[INFO ] 2019-10-08 02:20:20.769 [task-4] StudentServiceImpl - Student info : StudentResponse(studentId=1, name=Ausaf, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1)])
+[INFO ] 2019-10-08 02:21:54.475 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 02:21:55.478 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1787 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 02:21:55.479 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 02:21:55.500 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 02:22:01.462 [main] MemberStaffsApp - Started MemberStaffsApp in 6.832 seconds (JVM running for 9.003)
+[INFO ] 2019-10-08 02:22:11.795 [task-1] StudentServiceImpl - Student info : StudentResponse(studentId=1, name=Ausaf, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1)])
+[INFO ] 2019-10-08 02:23:35.983 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 02:23:37.130 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1796 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 02:23:37.133 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 02:23:37.134 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 02:23:43.251 [main] MemberStaffsApp - Started MemberStaffsApp in 7.128 seconds (JVM running for 9.262)
+[INFO ] 2019-10-08 02:24:13.434 [http-nio-8081-exec-7] MyUserDetailService - userName : Khan
+[INFO ] 2019-10-08 02:24:13.780 [http-nio-8081-exec-7] MyUserDetailService - User Fetched from db : UserDAO(id=1, userName=Khan, password=password, isActive=true, role=ADMIN)
+[INFO ] 2019-10-08 02:26:40.567 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 02:26:41.632 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1809 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 02:26:41.632 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 02:26:41.633 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 02:27:07.832 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 02:27:08.829 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1818 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 02:27:08.830 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 02:27:08.832 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 02:27:15.289 [main] MemberStaffsApp - Started MemberStaffsApp in 7.299 seconds (JVM running for 9.225)
+[INFO ] 2019-10-08 02:27:28.525 [http-nio-8081-exec-3] MyUserDetailService - userName : Khan
+[INFO ] 2019-10-08 02:27:28.876 [http-nio-8081-exec-3] MyUserDetailService - User Fetched from db : UserDAO(id=1, userName=Khan, password=password, isActive=true, role=ADMIN)
+[INFO ] 2019-10-08 02:27:28.995 [task-1] StudentServiceImpl - Student info : StudentResponse(studentId=1, name=Ausaf, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1)])
+[INFO ] 2019-10-08 02:27:33.550 [task-2] StudentServiceImpl - Student info : StudentResponse(studentId=2, name=New Student, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1), TeacherResponse(teacherId=2, name=New Teacher, topicId=2)])
+[INFO ] 2019-10-08 02:28:14.837 [http-nio-8081-exec-8] MyUserDetailService - userName : Ausaf
+[INFO ] 2019-10-08 02:28:14.842 [http-nio-8081-exec-8] MyUserDetailService - User Fetched from db : UserDAO(id=5d9b94bb74d1eafb435ca12f, userName=Ausaf, password=password, isActive=true, role=ADMIN)
+[INFO ] 2019-10-08 02:28:14.863 [task-3] StudentServiceImpl - Student info : StudentResponse(studentId=2, name=New Student, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1), TeacherResponse(teacherId=2, name=New Teacher, topicId=2)])
+[INFO ] 2019-10-08 02:28:18.787 [task-4] StudentServiceImpl - Student info : StudentResponse(studentId=1, name=Ausaf, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1)])
+[INFO ] 2019-10-08 02:28:39.854 [http-nio-8081-exec-10] MyUserDetailService - userName : as
+[INFO ] 2019-10-08 02:28:39.858 [http-nio-8081-exec-10] MyUserDetailService - User Fetched from db : null
+[INFO ] 2019-10-08 02:28:44.875 [http-nio-8081-exec-3] MyUserDetailService - userName : d nwc
+[INFO ] 2019-10-08 02:28:44.878 [http-nio-8081-exec-3] MyUserDetailService - User Fetched from db : null
+[INFO ] 2019-10-08 02:32:04.414 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-08 02:32:05.615 [main] MemberStaffsApp - Starting MemberStaffsApp on 192.168.1.5 with PID 1836 (/Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs/MemberStaffsApp/target/classes started by ausafkhan in /Users/ausafkhan/Documents/StudyDemoSpring/MemberStaffs)
+[DEBUG] 2019-10-08 02:32:05.616 [main] MemberStaffsApp - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-10-08 02:32:05.617 [main] MemberStaffsApp - No active profile set, falling back to default profiles: default
+[INFO ] 2019-10-08 02:32:12.051 [main] MemberStaffsApp - Started MemberStaffsApp in 7.518 seconds (JVM running for 9.609)
+[INFO ] 2019-10-08 02:32:29.809 [http-nio-8081-exec-3] MyUserDetailService - userName : khan
+[INFO ] 2019-10-08 02:32:30.093 [http-nio-8081-exec-3] MyUserDetailService - User Fetched from db : Optional.empty
+[INFO ] 2019-10-08 02:32:37.904 [http-nio-8081-exec-6] MyUserDetailService - userName : Ausaf
+[INFO ] 2019-10-08 02:32:37.939 [http-nio-8081-exec-6] MyUserDetailService - User Fetched from db : Optional[UserDAO(id=5d9b94bb74d1eafb435ca12f, userName=Ausaf, password=password, isActive=true, role=ADMIN)]
+[INFO ] 2019-10-08 02:32:38.034 [task-1] StudentServiceImpl - Student info : StudentResponse(studentId=1, name=Ausaf, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1)])
+[INFO ] 2019-10-08 02:32:42.045 [task-2] StudentServiceImpl - Student info : StudentResponse(studentId=2, name=New Student, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1), TeacherResponse(teacherId=2, name=New Teacher, topicId=2)])
+[INFO ] 2019-10-08 02:32:53.889 [http-nio-8081-exec-5] MyUserDetailService - userName : kjwdnk
+[INFO ] 2019-10-08 02:32:53.894 [http-nio-8081-exec-5] MyUserDetailService - User Fetched from db : Optional.empty

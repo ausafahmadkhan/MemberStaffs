@@ -1,0 +1,62 @@
+package com.example.Member.Security.Entity;
+
+import com.example.Member.Persistence.Models.UserDAO;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+public class MyUserDetails implements UserDetails {
+
+    private String userName;
+    private String password;
+    private Boolean isActive;
+    private List<GrantedAuthority> authorities;
+
+    public MyUserDetails(UserDAO userDAO)
+    {
+        this.userName = userDAO.getUserName();
+        this.password = userDAO.getPassword();
+        this.isActive = userDAO.getIsActive();
+        this.authorities = Collections.singletonList(new SimpleGrantedAuthority(userDAO.getRole().getValue()));
+
+    }
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return authorities;
+    }
+
+    @Override
+    public String getPassword() {
+        return password;
+    }
+
+    @Override
+    public String getUsername() {
+        return userName;
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return isActive;
+    }
+}
