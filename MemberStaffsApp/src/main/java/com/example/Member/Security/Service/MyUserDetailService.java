@@ -1,9 +1,8 @@
 package com.example.Member.Security.Service;
 
-import com.example.Member.Persistence.Models.UserDAO;
-import com.example.Member.Persistence.Repository.UserRepository;
+import com.example.Member.Security.Entity.UserDAO;
+import com.example.Member.Security.Repository.UserRepository;
 import com.example.Member.Security.Entity.MyUserDetails;
-import com.example.Member.Security.Enums.Role;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +24,6 @@ public class MyUserDetailService implements UserDetailsService
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException
     {
-        logger.info("userName : {}", userName);
         Optional<UserDAO> userDAO = userRepository.findByUserName(userName);
         logger.info("User Fetched from db : {}", userDAO);
         userDAO.orElseThrow(() -> new UsernameNotFoundException("User not present"));

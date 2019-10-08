@@ -1,6 +1,6 @@
-package com.example.Member.Persistence.Repository;
+package com.example.Member.Security.Repository;
 
-import com.example.Member.Persistence.Models.UserDAO;
+import com.example.Member.Security.Entity.UserDAO;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 

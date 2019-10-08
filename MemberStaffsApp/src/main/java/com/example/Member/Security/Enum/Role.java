@@ -1,4 +1,4 @@
-package com.example.Member.Security.Enums;
+package com.example.Member.Security.Enum;
 
 
 public enum Role

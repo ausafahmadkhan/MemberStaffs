@@ -1,6 +1,5 @@
 package com.example.Member.Security.Entity;
 
-import com.example.Member.Persistence.Models.UserDAO;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

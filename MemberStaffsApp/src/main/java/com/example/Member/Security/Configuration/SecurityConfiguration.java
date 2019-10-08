@@ -27,7 +27,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter
                 .antMatchers("/MemberStaffs/**").fullyAuthenticated().anyRequest().hasRole("ADMIN")
                 .antMatchers("**/getStudent/**").fullyAuthenticated().anyRequest().hasAnyRole("ADMIN", "STUDENT")
                 .and()
-                .formLogin();
+                .httpBasic()
+                .and()
+                .csrf().disable();
     }
 
     @Bean

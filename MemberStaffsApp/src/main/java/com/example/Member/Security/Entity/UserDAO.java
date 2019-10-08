@@ -1,6 +1,6 @@
-package com.example.Member.Persistence.Models;
+package com.example.Member.Security.Entity;
 
-import com.example.Member.Security.Enums.Role;
+import com.example.Member.Security.Enum.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
