@@ -1,6 +1,5 @@
 package com.example.Member.Persistence.Repository;
 
-import com.example.Member.MemberResponse.TeacherResponse;
 import com.example.Member.Persistence.Models.TeacherDAO;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;

@@ -88,3 +88,28 @@
 [INFO ] 2019-10-05 02:16:06.104 [OkHttp http://localhost:8080/...] StudentServiceImpl - Student DAO : StudentDAO(studentId=2, name=New Student, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherDAO(teacherId=1, name=Khan, topicId=1), TeacherDAO(teacherId=2, name=New Teacher, topicId=null)])
 [INFO ] 2019-10-05 02:16:30.867 [task-4] StudentServiceImpl - Student info : StudentResponse(studentId=2, name=New Student, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1), TeacherResponse(teacherId=2, name=New Teacher, topicId=2)])
 [INFO ] 2019-10-05 02:33:04.491 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 01:11:23.037 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 01:11:59.868 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 01:13:55.104 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 01:19:17.312 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 01:23:19.342 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 01:37:40.799 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 01:59:16.393 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 02:02:15.373 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 02:03:35.892 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 02:05:44.153 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 02:08:56.091 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 02:12:03.399 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 02:14:40.942 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 02:15:01.539 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 02:16:28.946 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 02:17:42.996 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 02:21:17.747 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 02:22:24.253 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 02:26:45.499 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 02:28:32.290 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 02:29:13.167 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 02:32:44.201 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 02:42:13.484 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 02:43:44.120 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 02:47:14.569 [main] MemberStaffsApp - Starting MemberStaff App
