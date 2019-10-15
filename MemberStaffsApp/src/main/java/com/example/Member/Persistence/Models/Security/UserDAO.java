@@ -25,8 +25,8 @@ public class UserDAO
     @NotBlank
     private String password;
 
-    @Field
-    private Boolean isActive = true;
+    @Field(value = "true")
+    private Boolean isActive;
 
     @NotNull
     private List<Role> roles;

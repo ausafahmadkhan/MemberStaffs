@@ -12,6 +12,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -37,13 +38,12 @@ public class AuthController
     @RequestMapping(value = "/auth/getToken", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     CompletableFuture<ResponseEntity<ResponseModel<JwtToken>>> generateToken(@Valid @RequestBody UserRequest userRequest)
     {
-
-        JwtUserDetails jwtUserDetails = jwtUserDetailsService.loadUserByUsername(userRequest.getUsername());
-        UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(jwtUserDetails, jwtUserDetails.getPassword(), jwtUserDetails.getAuthorities());
-        System.out.println(jwtUserDetails.getPassword());
-        authenticationManager.authenticate(authenticationToken);
-
-        JwtToken jwtToken = jwtTokenProvider.generateToken(authenticationToken);
+        System.out.println("Before up auth");
+        UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(userRequest.getUsername(),userRequest.getPassword());
+        System.out.println(authenticationToken.toString());
+        Authentication authentication = authenticationManager.authenticate(authenticationToken);
+        System.out.println("Authentication : " + authentication + "Authenticated ?? " + authentication.isAuthenticated());
+        JwtToken jwtToken = jwtTokenProvider.generateToken(authentication);
 
         return CompletableFuture.completedFuture(ResponseEntity.ok(new ResponseModel<JwtToken>(jwtToken)));
 

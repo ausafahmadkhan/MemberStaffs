@@ -41,7 +41,7 @@ public class JwtTokenProvider
         return new JwtToken(token);
     }
 
-    public Boolean vaildateToken(String token)
+    public Boolean isVaildToken(String token)
     {
         try {
             Jwts.parser().setSigningKey(secretKey).parseClaimsJws(token);
@@ -55,12 +55,11 @@ public class JwtTokenProvider
 
     public String getUserNameFromJwt(String token)
     {
-        System.out.println("MySecretKey is : " + secretKey);
-            return Jwts.parser()
-                              .setSigningKey(secretKey)
-                              .parseClaimsJws(token)
-                              .getBody()
-                              .getSubject();
+        return Jwts.parser()
+                          .setSigningKey(secretKey)
+                          .parseClaimsJws(token)
+                          .getBody()
+                          .getSubject();
     }
 
 }

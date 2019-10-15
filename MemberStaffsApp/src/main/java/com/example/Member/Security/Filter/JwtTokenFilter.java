@@ -4,10 +4,10 @@ import com.example.Member.Persistence.Models.Security.JwtUserDetails;
 import com.example.Member.Security.Utilities.JwtTokenProvider;
 import com.example.Member.Services.Security.JwtUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.web.authentication.WebAuthenticationDetails;
-import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
@@ -27,34 +27,38 @@ public class JwtTokenFilter extends OncePerRequestFilter
     @Autowired
     private JwtUserDetailsService userDetailsService;
 
+    @Autowired
+    private AuthenticationManager authenticationManager;
+
+    @Override
+    protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException
+    {
+        String path = request.getServletPath();
+        return path.startsWith("/User");
+    }
+
     @Override
     protected void doFilterInternal(HttpServletRequest httpServletRequest,
                                     HttpServletResponse httpServletResponse,
                                     FilterChain filterChain) throws ServletException, IOException {
-        try {
+        try
+        {
             String bearerToken = httpServletRequest.getHeader("Authorization");
             String jwt = getJwtFromRequest(bearerToken);
 
-            if (jwt != null && !jwtTokenProvider.vaildateToken(jwt))
+            if (jwt == null || !jwtTokenProvider.isVaildToken(jwt))
                 throw new IllegalArgumentException("Not a valid Token");
             else
             {
                 String username = jwtTokenProvider.getUserNameFromJwt(jwt);
                 JwtUserDetails jwtUserDetails = userDetailsService.loadUserByUsername(username);
-
-                /*UsernamePasswordAuthenticationToken implements Authentication
-                Triggers the authentication process
-                https://www.baeldung.com/manually-set-user-authentication-spring-security*/
-                UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(jwtUserDetails, null, jwtUserDetails.getAuthorities());
-
-                /*Use to get Session info (need to confirm)
-                authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(httpServletRequest));*/
-
+                System.out.println(jwtUserDetails.getAuthorities());
+                UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(jwtUserDetails, jwtUserDetails.getPassword(), jwtUserDetails.getAuthorities());
+                Authentication authentication = authenticationManager.authenticate(authenticationToken);
                 SecurityContextHolder.getContext().setAuthentication(authentication);
 
                 /*After setting the Authentication in the context, we'll now be able to check
                 if the current user is authenticated – using securityContext.getAuthentication().isAuthenticated()*/
-                System.out.println(authentication.isAuthenticated());
             }
         }
         catch (Exception e)

@@ -23,7 +23,6 @@ public class JwtUserDetailsService implements UserDetailsService
     {
         Optional<UserDAO> userDAO = userRepository.findByUserName(username);
         userDAO.orElseThrow(() -> new UsernameNotFoundException("User not present"));
-        System.out.println(userDAO.get().getPassword());
         return new JwtUserDetails(userDAO.get());
     }
 

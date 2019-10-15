@@ -113,3 +113,50 @@
 [INFO ] 2019-10-15 02:42:13.484 [main] MemberStaffsApp - Starting MemberStaff App
 [INFO ] 2019-10-15 02:43:44.120 [main] MemberStaffsApp - Starting MemberStaff App
 [INFO ] 2019-10-15 02:47:14.569 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 17:10:02.765 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 17:12:27.426 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 17:15:13.915 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 17:19:14.101 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 17:30:04.306 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 17:40:45.337 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 17:41:50.827 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 17:44:50.913 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 17:49:46.859 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 17:54:08.139 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 17:55:47.817 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 18:06:04.654 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 18:11:40.844 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 18:19:23.392 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 18:22:31.931 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 18:24:47.167 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 18:26:51.784 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 18:38:35.152 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 23:29:11.160 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 23:33:37.238 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 23:42:59.350 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 23:47:52.509 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 23:50:52.023 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 23:52:04.115 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 23:53:53.403 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 23:54:50.307 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 23:56:28.821 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-15 23:59:37.350 [task-1] TeacherServiceImpl - Added Teacher : TeacherDAO(teacherId=1, name=qwerty, topicId=1)
+[INFO ] 2019-10-16 00:02:39.814 [task-2] TeacherServiceImpl - Added Teacher : TeacherDAO(teacherId=2, name=qwertye, topicId=2)
+[INFO ] 2019-10-16 00:06:08.152 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 00:06:24.459 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 00:09:59.174 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 00:14:40.127 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 00:22:42.464 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 00:30:40.134 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 00:33:51.762 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 00:35:05.398 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 00:37:37.652 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 00:41:23.273 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 00:44:32.333 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 01:01:21.445 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 01:03:41.134 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 01:03:55.116 [task-1] TeacherServiceImpl - Added Teacher : TeacherDAO(teacherId=3, name=qwertyew, topicId=3)
+[INFO ] 2019-10-16 01:04:45.315 [task-2] TeacherServiceImpl - Added Teacher : TeacherDAO(teacherId=4, name=qwertyewr, topicId=4)
+[INFO ] 2019-10-16 01:07:16.252 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 01:07:51.177 [task-1] TeacherServiceImpl - Added Teacher : TeacherDAO(teacherId=5, name=qwertywewr, topicId=5)
+[INFO ] 2019-10-16 01:09:19.139 [task-2] StudentServiceImpl - Added student : StudentDAO(studentId=1, name=stu1, topicsEnrolled=null, teachersAssigned=null)
