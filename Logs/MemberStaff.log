@@ -160,3 +160,14 @@
 [INFO ] 2019-10-16 01:07:16.252 [main] MemberStaffsApp - Starting MemberStaff App
 [INFO ] 2019-10-16 01:07:51.177 [task-1] TeacherServiceImpl - Added Teacher : TeacherDAO(teacherId=5, name=qwertywewr, topicId=5)
 [INFO ] 2019-10-16 01:09:19.139 [task-2] StudentServiceImpl - Added student : StudentDAO(studentId=1, name=stu1, topicsEnrolled=null, teachersAssigned=null)
+[INFO ] 2019-10-16 15:40:12.384 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 15:52:11.877 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 15:53:35.230 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 15:54:40.619 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 15:55:34.458 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 15:56:09.779 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 15:57:03.908 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 16:01:09.148 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 16:49:30.489 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 16:50:50.569 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-16 16:51:30.551 [main] MemberStaffsApp - Starting MemberStaff App
