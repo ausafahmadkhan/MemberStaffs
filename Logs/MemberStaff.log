@@ -87,3 +87,54 @@
 [INFO ] 2019-10-05 02:16:06.104 [OkHttp http://localhost:8080/...] StudentServiceImpl - Response Model: ResponseModel(data=TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)]))
 [INFO ] 2019-10-05 02:16:06.104 [OkHttp http://localhost:8080/...] StudentServiceImpl - Student DAO : StudentDAO(studentId=2, name=New Student, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherDAO(teacherId=1, name=Khan, topicId=1), TeacherDAO(teacherId=2, name=New Teacher, topicId=null)])
 [INFO ] 2019-10-05 02:16:30.867 [task-4] StudentServiceImpl - Student info : StudentResponse(studentId=2, name=New Student, topicsEnrolled=[TopicResponse(topicId=1, name=Java, courseResponses=[CourseResponse(courseId=1, name=Course1, description=desc1)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)]), TopicResponse(topicId=2, name=Node.js, courseResponses=[CourseResponse(courseId=2, name=Course2, description=desc2)])], teachersAssigned=[TeacherResponse(teacherId=1, name=Khan, topicId=1), TeacherResponse(teacherId=2, name=New Teacher, topicId=2)])
+[INFO ] 2019-10-29 16:56:39.612 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 16:57:09.746 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 16:58:34.107 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 17:17:21.387 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 17:20:15.768 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 17:31:50.280 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 17:43:02.201 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 17:48:41.869 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 18:05:03.268 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 18:06:37.594 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 18:07:55.874 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 18:09:54.420 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 18:19:08.806 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 18:19:31.976 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 18:21:36.502 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 18:24:44.441 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 18:27:08.377 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 18:35:58.953 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 22:41:29.535 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 22:43:50.137 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 22:45:49.932 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 22:51:26.502 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 22:53:32.630 [main] MemberStaffsApp - Starting MemberStaff App
+[ERROR] 2019-10-29 22:53:45.643 [task-1] StudentServiceImpl - Student not enrolled in any course
+[INFO ] 2019-10-29 22:55:58.158 [main] MemberStaffsApp - Starting MemberStaff App
+[ERROR] 2019-10-29 22:57:39.498 [task-1] StudentServiceImpl - Student not enrolled in any course
+[ERROR] 2019-10-29 22:58:00.679 [task-2] StudentServiceImpl - Student not enrolled in any course
+[INFO ] 2019-10-29 23:04:24.691 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 23:08:26.336 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 23:12:15.622 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 23:12:37.981 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-29 23:14:13.158 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-30 00:02:23.189 [main] MemberStaffsApp - Starting MemberStaff App
+[ERROR] 2019-10-30 00:03:02.591 [task-1] StudentServiceImpl - Student not enrolled in any course
+[ERROR] 2019-10-30 00:03:15.570 [task-2] StudentServiceImpl - Student not enrolled in any course
+[INFO ] 2019-10-30 00:05:48.892 [main] MemberStaffsApp - Starting MemberStaff App
+[ERROR] 2019-10-30 00:06:38.341 [task-1] StudentServiceImpl - Student not enrolled in any course
+[ERROR] 2019-10-30 00:06:53.370 [task-2] StudentServiceImpl - Student not enrolled in any course
+[ERROR] 2019-10-30 00:07:02.438 [task-3] StudentServiceImpl - Student not enrolled in any course
+[ERROR] 2019-10-30 00:07:04.592 [task-4] StudentServiceImpl - Student not enrolled in any course
+[ERROR] 2019-10-30 00:07:05.705 [task-5] StudentServiceImpl - Student not enrolled in any course
+[ERROR] 2019-10-30 00:07:06.694 [task-6] StudentServiceImpl - Student not enrolled in any course
+[INFO ] 2019-10-30 00:20:17.731 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-30 00:22:47.462 [main] MemberStaffsApp - Starting MemberStaff App
+[ERROR] 2019-10-30 00:23:22.028 [task-1] StudentServiceImpl - Student not enrolled in any course
+[INFO ] 2019-10-30 00:24:16.319 [main] MemberStaffsApp - Starting MemberStaff App
+[INFO ] 2019-10-30 00:25:55.242 [main] MemberStaffsApp - Starting MemberStaff App
+[ERROR] 2019-10-30 00:30:29.763 [task-1] StudentServiceImpl - Student not enrolled in any course
+[ERROR] 2019-10-30 00:34:33.712 [task-2] StudentServiceImpl - Student not enrolled in any course
+[INFO ] 2019-10-30 00:34:50.991 [main] MemberStaffsApp - Starting MemberStaff App
+[ERROR] 2019-10-30 00:35:05.914 [task-1] StudentServiceImpl - Student not enrolled in any course

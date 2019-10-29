@@ -1,14 +1,15 @@
 package com.example.Member.Services;
 
+import com.example.AuthDemo.AuthResponse.AuthPublicCert;
+import com.example.Member.Client.AuthClient.AuthClientWrapper;
+import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import java.security.KeyFactory;
-import java.security.NoSuchAlgorithmException;
 import java.security.PublicKey;
-import java.security.spec.InvalidKeySpecException;
 import java.security.spec.X509EncodedKeySpec;
 import java.util.Base64;
 
@@ -16,7 +17,7 @@ import java.util.Base64;
 public class JwtTokenService
 {
     @Autowired
-    private PublicKeyService publicKeyService;
+    private AuthClientWrapper authClientWrapper;
 
     public String getToken(String bearerToken)
     {
@@ -25,50 +26,28 @@ public class JwtTokenService
         return null;
     }
 
-    public boolean isValidToken(String token) throws NoSuchAlgorithmException, InvalidKeySpecException {
+    public Claims validateToken(String token) throws Exception {
         if (StringUtils.hasText(token))
         {
-            String pubKey = publicKeyService.getCachedPublicKey().getPublicKey();
+            AuthPublicCert authPublicCert = authClientWrapper.getCachedPublicKey();
+            String pubKey = authPublicCert.getPublicKey();
             byte[] bytes = Base64.getDecoder().decode(pubKey);
             KeyFactory keyFactory = KeyFactory.getInstance("RSA");
             X509EncodedKeySpec x509EncodedKeySpec = new X509EncodedKeySpec(bytes);
             PublicKey publicKey = keyFactory.generatePublic(x509EncodedKeySpec);
-            try {
-                Jwts
-                        .parser()
-                        .setSigningKey(publicKey)
-                        .parseClaimsJws(token);
+            try
+            {
+                return Jwts
+                            .parser()
+                            .setSigningKey(publicKey)
+                            .parseClaimsJws(token)
+                            .getBody();
             }
             catch (Exception e)
             {
-                return false;
+                return null;
             }
-            return  true;
         }
-        return false;
-    }
-
-    public String getUsernameFromJwt(String token) throws NoSuchAlgorithmException, InvalidKeySpecException
-    {
-        String pubKey = publicKeyService.getCachedPublicKey().getPublicKey();
-        byte[] bytes = Base64.getDecoder().decode(pubKey);
-        KeyFactory keyFactory = KeyFactory.getInstance("RSA");
-        X509EncodedKeySpec x509EncodedKeySpec = new X509EncodedKeySpec(bytes);
-        PublicKey publicKey = keyFactory.generatePublic(x509EncodedKeySpec);
-        String username = "";
-        try {
-                username = Jwts
-                                    .parser()
-                                    .setSigningKey(publicKey)
-                                    .parseClaimsJws(token)
-                                    .getBody()
-                                    .get("username").toString();
-        }
-        catch (Exception e)
-        {
-            System.out.println("Not a valid Jwt");
-        }
-
-        return username;
+        return null;
     }
 }
