@@ -1,7 +1,7 @@
 package com.example.Member.Services;
 
 import com.example.Material.MaterialResponses.TopicResponse;
-import com.example.Member.Client.StudyMaterialClient;
+import com.example.Member.Client.StudyMaterialClient.StudyMaterialClient;
 import com.example.Member.MemberRequest.StudentRequest;
 import com.example.Member.MemberResponse.ResponseModel;
 import com.example.Member.MemberResponse.StudentResponse;
@@ -13,15 +13,12 @@ import com.example.Member.Persistence.Repository.TeacherRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -95,7 +92,7 @@ public class StudentServiceImpl implements StudentService
                         }
                         catch(Exception e)
                         {
-                            logger.error("Exception occured : {}", e);
+                            logger.error("Exception occured : {}", e.getMessage());
                         }
 
                     }

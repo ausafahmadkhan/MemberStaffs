@@ -1,4 +1,4 @@
-package com.example.Member.MemberController;
+package com.example.Member.Controller;
 
 import com.example.Member.MemberRequest.StudentRequest;
 import com.example.Member.MemberRequest.TeacherRequest;
@@ -12,7 +12,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.IOException;
 import java.util.concurrent.CompletableFuture;
 
 @RestController
@@ -37,7 +36,7 @@ public class MemberController
     public CompletableFuture<ResponseEntity<ResponseModel<StudentResponse>>> enrollStudent(@PathVariable("topicId") String topicId, @PathVariable("studentId") String studentId) throws Exception
     {
         CompletableFuture<StudentResponse> studentResponse = studentService.enrollStudent(studentId, topicId);
-        CompletableFuture<ResponseEntity<ResponseModel<StudentResponse>>> result = studentResponse.thenApply(t -> new ResponseEntity<>(new ResponseModel(t), HttpStatus.OK));
+        CompletableFuture<ResponseEntity<ResponseModel<StudentResponse>>> result = studentResponse.thenApply(t -> new ResponseEntity<ResponseModel<StudentResponse>>(new ResponseModel<StudentResponse>(t), HttpStatus.OK));
         return result;
     }
 

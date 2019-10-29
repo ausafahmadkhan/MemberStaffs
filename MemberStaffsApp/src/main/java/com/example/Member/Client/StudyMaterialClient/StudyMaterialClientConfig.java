@@ -1,5 +1,6 @@
-package com.example.Member.Client;
+package com.example.Member.Client.StudyMaterialClient;
 
+import com.example.Member.Client.StudyMaterialClient.StudyMaterialClient;
 import okhttp3.OkHttpClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

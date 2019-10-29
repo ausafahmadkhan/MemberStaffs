@@ -1,4 +1,4 @@
-package com.example.Member.Client;
+package com.example.Member.Client.StudyMaterialClient;
 
 import com.example.Material.MaterialResponses.TopicResponse;
 import com.example.Member.MemberResponse.ResponseModel;
