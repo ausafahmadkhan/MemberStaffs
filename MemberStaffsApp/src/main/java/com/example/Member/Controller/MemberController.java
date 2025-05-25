@@ -1,4 +1,4 @@
-package com.example.Member.Controllers;
+package com.example.Member.Controller;
 
 import com.example.Member.MemberRequest.StudentRequest;
 import com.example.Member.MemberRequest.TeacherRequest;
